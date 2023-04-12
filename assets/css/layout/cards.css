@@ -1,0 +1,102 @@
+.cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+
+  margin: 4rem auto;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 94%;
+
+  padding: 1rem;
+}
+
+.card.anual {
+  border: 2px solid #7c17b0;
+  border-radius: 7px;
+
+  /* linear-gradient(to bottom, #7C17B0, #491A9F);*/
+}
+
+.card span {
+  background: linear-gradient(to right, #9632ec, #7421d1);
+  color: #fff;
+
+  font-weight: 600;
+
+  padding: 0.5rem 1em;
+
+  border-radius: 2rem;
+
+  margin-top: -2.2rem;
+}
+
+.card h3 {
+  color: #fff;
+
+  font-size: 2.25rem;
+  font-weight: 600;
+
+  margin: 0.9rem auto;
+}
+
+.card h2 {
+  color: #fff;
+
+  font-size: 2.55rem;
+  font-weight: 600;
+
+  margin: 0.9rem auto;
+}
+
+.card small {
+  color: #fff;
+
+  text-align: center;
+  font-weight: 300;
+
+  margin: 0.9rem auto;
+}
+
+.card .card__btn {
+  width: 94%;
+
+  text-decoration: none;
+  font-weight: 600;
+  text-align: center;
+
+  color: #fff;
+  background: linear-gradient(to right, #9632ec, #7421d1);
+
+  border-radius: 4rem;
+
+  padding: 1rem 1.2rem;
+
+  margin: 0.9rem auto;
+}
+
+.card.mensal {
+  background: linear-gradient(to bottom, #2a2342d9, #2a23423d);
+
+  border-radius: 0.7rem;
+
+  padding-bottom: 1.25rem;
+}
+
+@media screen and (min-width: 768px) {
+	.card {
+		width: 95%;
+	}
+	
+	.card .card__btn {
+		width: 60%;
+	}
+}

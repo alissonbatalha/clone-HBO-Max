@@ -1,0 +1,172 @@
+.duvidas-container {
+	width: 100%;
+	
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.duvidas {
+	width: 90%;
+	
+	list-style: none;
+}
+
+.duvidas li {
+	width: 100%;
+	padding: .5rem 1rem;
+}
+
+.duvidas span {
+  display: inline-block;
+
+  position: absolute;
+  right: 6%;
+
+  width: 23px;
+  height: 2px;
+
+  border-radius: 3px;
+
+  margin: 12px auto;
+  margin-left: 1rem;
+
+  background-color: #7568BD;
+  color: #7568BD;
+
+
+  cursor: pointer;
+
+  transition: rotate .4s linear ;
+} 
+
+.duvidas .pergunta__bar {
+  transform: rotate(90deg);
+}
+
+.pergunta {
+	width: 100%;
+	
+	color: #7568BD;
+	background-color: transparent;
+	
+	text-align: left;
+	font-size: 1.3rem;
+	word-spacing: .3rem;
+	
+	padding-bottom: 1.2rem;
+  padding-left: 1rem;
+	
+	border: none;
+	border-bottom: 1px solid #131336;
+  outline: none;
+
+  cursor: pointer;
+
+  transition: all .4s;
+}
+
+.pergunta-ativa .pergunta__bar {
+  rotate: 90deg;
+}
+
+.resposta {
+	width: 100%;
+	
+  padding: 0 18px;
+  
+  max-height: 0;
+
+  overflow: hidden;
+
+  margin: 1rem auto;
+
+  transition: all .5s ease-out;
+}
+
+.resposta-ativa {
+	max-height: 500px;
+}
+
+.resposta p {
+	width: 100%;
+	
+  color: #fff;
+
+  line-height: 1.6;
+  font-size: 1.25rem;
+  text-align: left;
+
+  transition: max-height .5s ease-out;
+}
+
+.resposta small {
+	margin-top: 1.5rem;
+	
+	width: 100%;
+}
+
+.resposta--destaque,
+.dispositivo {
+	width: 100%;
+	
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.resposta--destaque {
+  margin: 1rem auto;
+  text-align: center;
+}
+
+.dispositivo {
+	text-align: center;
+  gap: 1rem;
+}
+
+.dispositivo img {
+  width: 50%;
+}
+
+.dispositivo h3 {
+  color: #fff;
+
+  font-size: 24px;
+}
+
+.dispositivo p {
+	text-align: center;
+	line-height: 10px;
+}
+
+.dispositivo h3::after {
+  content: "";
+  
+  background: #ff00e5;
+
+  display: block;
+
+  height: 2px;
+  width: 70px;
+
+  margin: 20px auto;
+}
+
+@media screen and (min-width: 768px ) {
+	.duvidas {
+		width: 80%;
+		
+		margin-top: 1.5em;
+	}
+	
+	.resposta--destaque {
+		flex-direction: row;
+		justify-content: space-evenly;
+		align-items: flex-start;
+	}
+	
+}

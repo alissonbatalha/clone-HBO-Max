@@ -1,0 +1,14 @@
+a.btn {
+	padding: 0.7rem 1.4rem;
+
+  background: #7f0ea1;
+  color: #fff;
+
+  margin: auto;
+
+  border-radius: 1rem;
+
+  text-align: center;
+  text-decoration: none;
+  font-size: .8rem;
+}

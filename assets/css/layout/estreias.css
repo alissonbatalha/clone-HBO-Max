@@ -1,0 +1,234 @@
+.estreias {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.32rem;
+
+  background: linear-gradient(to bottom, #0e0c33fe, #76076f, #230a46bf);
+
+  height: 120vh;
+
+  border-radius: 1rem;
+}
+
+.estreias h2 {
+  color: #fff;
+
+  text-align: center;
+  font-size: 1.35rem;
+  font-weight: 350;
+
+  margin: 2rem auto 1rem;
+
+  width: 90%;
+}
+
+.estreias__banner {
+  display: flex;
+  flex-direction: column;
+}
+
+.estreias__banner span {
+  width: 100%;
+
+  padding: 0.4rem 1.2rem;
+
+  background: linear-gradient(to right, #6419e6, #ad0ef2, #7b0886);
+  color: #fff;
+
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.estreias__banner img {
+  height: 400px;
+  width: 500px;
+}
+
+.estreias__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.card.card__sobre {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+  background: radial-gradient(#76076f, #440f62fe);
+  color: #fff;
+
+  text-align: center;
+
+  min-height: 40vh;
+
+  border-radius: 0.5rem;
+
+  margin-top: -4rem;
+}
+
+.card__sobre h4 {
+  font-size: 1.4rem;
+
+  margin: 0.4rem auto 1.3rem;
+
+  word-spacing: 0.3rem;
+  letter-spacing: 0.3rem;
+}
+
+.card__sobre p {
+  word-spacing: 0.3rem;
+  line-height: 1.5rem;
+
+  text-align: justify;
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+
+.estreias a {
+  text-decoration: none;
+  font-size: 0.6rem;
+  font-weight: 600;
+
+  color: #fff;
+
+  padding: 0.85rem 1.8rem;
+
+  width: 150px;
+
+  background: #940dbd;
+
+  margin: 1rem auto 1.5rem;
+
+  border-radius: 1rem;
+
+  text-align: center;
+}
+
+.swiper {
+  width: 100%;
+  height: auto;
+}
+
+.swiper-slide img {
+  width: 100%;
+}
+
+.swiper-pagination {
+  position: initial;
+
+  margin: 0.5em 0;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  display: none;
+  color: transparent;
+}
+
+.swiper-scrollbar {
+  display: none;
+}
+
+.card__sobre--elenco {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+
+  margin: 1.6rem auto 2.2rem;
+}
+
+.card__sobre--elenco .ator {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2rem auto 0.2rem;
+}
+
+.ator {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.ator img {
+  width: 50px;
+}
+
+.ator .ator__nome {
+  color: #fff;
+
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.ator .ator__personagem {
+  color: #e0452d;
+
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+	.estreias{
+		height: 800px;
+	}
+	
+	.estreias__banner img {
+		height: 360px;
+	}
+	
+	.estreias h2 {
+		font-size: 2.5rem;
+	}
+	
+	.swiper-slide {
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	.swiper-button-prev,
+	.swiper-button-next {
+	  display: inline-block;
+  	color: #fff;
+}
+	
+	.estreias__banner,
+	.estreias__card {
+		width: 45%;
+	}
+	
+	.estreias__card {
+		background: transparent;
+		
+		height: 400px;
+	}
+	
+	.card.card__sobre {
+		min-height: 400px;
+		height: 410px;
+		
+		background-color: transparent;
+		
+		margin-top: 10px;
+		
+		gap: 1.25rem;
+	}
+	
+	.ator img {
+  width: 80px;
+	}
+	
+}

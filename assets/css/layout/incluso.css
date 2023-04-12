@@ -1,0 +1,34 @@
+.incluso {
+  display: flex;
+  justify-content: center;
+}
+
+.incluso ul {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+  width: 90%;
+
+  text-align: center;
+}
+
+.incluso ul li {
+  color: #940dbd;
+}
+
+.incluso ul li span {
+  color: #ffffff;
+
+  font-weight: 300;
+}
+
+.planos #incluso-span.span-active {
+  color: #fff;
+}
+
+#incluso-lista.menu-active {
+  display: flex;
+}
